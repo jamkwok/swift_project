@@ -1,24 +1,26 @@
 import Foundation
 import Alamofire
 
-// https://theswiftdev.com/2018/07/10/ultimate-grand-central-dispatch-tutorial-in-swift/
-
-// https://www.sitepoint.com/improve-swift-closures-result/
-
-print("invoking")
-
-var flag = false
 let queue = DispatchQueue(label: "com.cnoon.response-queue", qos: .utility, attributes: [.concurrent])
 
-Alamofire.request("http://httpbin.org/get", parameters: ["foo": "bar"])
+// Empty Dictionary Literal
+var json: [String : Any]? = [:]
+
+Alamofire.request("https://jsonplaceholder.typicode.com/todos/1")
     .response(
         queue: queue,
         responseSerializer: DataRequest.jsonResponseSerializer(),
         completionHandler: { response in
-            print("calling out")
-            flag = true
-        }
+            switch response.result {
+            case .success:
+                json = response.result.value as? [String: Any]
+            case .failure(let error):
+                print(error)
+            }
+        }    
     )
 
 sleep(5)
-print(flag)
+print (json)
+print (json["title"] as? String)
+
