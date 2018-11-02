@@ -1,6 +1,8 @@
 import Foundation
 import Alamofire
 
+// http://www.aidanf.net/learn-swift/types_and_type_inference
+
 let queue = DispatchQueue(label: "com.cnoon.response-queue", qos: .utility, attributes: [.concurrent])
 
 // Empty Dictionary Literal

@@ -1,3 +1,6 @@
 # swift_project
 
-A description of this package.
+A simple playground
+
+## Swift strongly typed reference:
+http://www.aidanf.net/learn-swift/types_and_type_inference
