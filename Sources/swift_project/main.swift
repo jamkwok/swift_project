@@ -22,5 +22,7 @@ Alamofire.request("https://jsonplaceholder.typicode.com/todos/1")
 
 sleep(5)
 print (json)
-print (json["title"] as? String)
+
+//Optional binding
+print(json?["title"] as? String)
 
