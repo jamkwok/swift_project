@@ -18,8 +18,6 @@ https://medium.com/ios-os-x-development/swift-optionals-78dafaa53f3
 import Foundation
 import Alamofire
 
-// http://www.aidanf.net/learn-swift/types_and_type_inference
-
 let queue = DispatchQueue(label: "com.cnoon.response-queue", qos: .utility, attributes: [.concurrent])
 
 // Empty Dictionary Literal
@@ -50,8 +48,6 @@ print(json?["title"] as? String)
 ```
 import Foundation
 import Alamofire
-
-// http://www.aidanf.net/learn-swift/types_and_type_inference
 
 let queue = DispatchQueue(label: "com.cnoon.response-queue", qos: .utility, attributes: [.concurrent])
 
