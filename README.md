@@ -74,7 +74,7 @@ Alamofire.request("https://jsonplaceholder.typicode.com/albums/1/photos")
 
 sleep(5)
 
-//Optional binding
+//Default photos to empty array
 for photo in photos ?? [] {
     print(photo["title"])
 }
