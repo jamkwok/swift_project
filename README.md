@@ -12,7 +12,7 @@ http://www.aidanf.net/learn-swift/types_and_type_inference
 https://medium.com/ios-os-x-development/swift-optionals-78dafaa53f3
 ```
 
-## Fetch Single Json Object
+## Fetch Single Json Object and store in Dictionary
 
 ```
 import Foundation
@@ -44,7 +44,7 @@ print (json)
 print(json?["title"] as? String)
 ```
 
-## Fetch Json Array
+## Fetch Json Array and store in Dictionary Array
 ```
 import Foundation
 import Alamofire
@@ -76,7 +76,7 @@ for photo in photos ?? [] {
 }
 ```
 
-### Fetch complex Json and store in struct
+## Fetch complex Json and store in struct
 ```
 import Foundation
 import Alamofire
