@@ -9,6 +9,7 @@ http://www.aidanf.net/learn-swift/types_and_type_inference
 
 ## Optionals
 ```
+// Optionals must be unwrapped before use and can be thought of as an enum.
 https://medium.com/ios-os-x-development/swift-optionals-78dafaa53f3
 ```
 
@@ -26,6 +27,10 @@ mySet1.intersection(mySet2) // [2,0]
 
 // Subtract removes values in mySet1 that exist in mySet2
 mySet1.subtract(mySet2) // [3,1]
+```
+
+## Enums
+```
 ```
 
 ## Fetch Single Json Object and store in Dictionary
