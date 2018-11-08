@@ -12,6 +12,22 @@ http://www.aidanf.net/learn-swift/types_and_type_inference
 https://medium.com/ios-os-x-development/swift-optionals-78dafaa53f3
 ```
 
+## Sets
+```
+// Sets are like arrays but can contains only unique values, there are a few things you can do with sets.
+var mySet1: Set<Int> = [0,1,2,3]
+var mySet2: Set<Int> = [0,2,4,6]
+
+// Union combines 2 sets
+mySet1.union(mySet2) // [6,4,2,0,1,3]
+
+// Intersection creates a set that has values in both sets.
+mySet1.intersection(mySet2) // [2,0]
+
+// Subtract removes values in mySet1 that exist in mySet2
+mySet1.subtract(mySet2) // [3,1]
+```
+
 ## Fetch Single Json Object and store in Dictionary
 
 ```
