@@ -243,4 +243,7 @@ print(person1.getBirthdayGreetingAndIncrementAge())
 var worker1: Worker = Worker(name: "James", age: 30, country: "Australia", occupation: "Engineer")
 print(worker1.getOccupation())
 print(worker1.getBirthdayGreetingAndIncrementAge())
+
+// Polymorphism change type based on context, worker gets treated as a person for this context.
+var people: [Person] = [person1, worker1]
 ```
