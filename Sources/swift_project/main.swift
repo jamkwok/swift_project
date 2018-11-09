@@ -89,6 +89,12 @@ class Worker: Person {
         super.init(name: name, age: age, country: country)
     }
 
+    //Override function from super class
+    override func getBirthdayGreetingAndIncrementAge() -> String {
+        self.age += 1
+        return "Happy birthday \(self.name) (\(self.occupation))"
+    }
+
     func getOccupation() -> String {
         return self.occupation
     }
@@ -99,5 +105,6 @@ print(person1.getBirthdayGreetingAndIncrementAge())
 
 var worker1: Worker = Worker(name: "James", age: 30, country: "Australia", occupation: "Engineer")
 print(worker1.getOccupation())
+print(worker1.getBirthdayGreetingAndIncrementAge())
 
 
