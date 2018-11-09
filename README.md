@@ -190,3 +190,32 @@ users?.forEach { user in
     print(user.name)
 }
 ```
+
+## Classes
+```
+// Classes are used to represent objects or things.
+// Classes are passed by reference (Always referenced with an address)
+// Structs are passed by value (A copy is made)
+
+class Person {
+    let name: String
+    var age: Int
+    let country: String
+
+    init(name: String, age: Int, country: String) {
+        self.name = name
+        self.age = age
+        self.country = country
+    }
+
+    func celebrateBirthday() {
+        self.age += 1
+        print("Happy birthday \(self.name)")
+    }
+
+}
+
+var person1: Person = Person(name: "James", age: 32, country: "Australia")
+person1.celebrateBirthday()
+
+```
