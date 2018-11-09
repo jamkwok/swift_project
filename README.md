@@ -11,6 +11,9 @@ http://www.aidanf.net/learn-swift/types_and_type_inference
 ```
 // Optionals must be unwrapped before use and can be thought of as an enum.
 https://medium.com/ios-os-x-development/swift-optionals-78dafaa53f3
+
+//Optional array of strings as a dictionary.
+var json: [String : Any]? = [:]
 ```
 
 ## Sets
@@ -31,6 +34,21 @@ mySet1.subtract(mySet2) // [3,1]
 
 ## Enums
 ```
+// Is a custom type with fixed options.
+enum experienceLevel {
+    case Noob
+    case Average
+    case Pro
+}
+
+player1Level: experienceLevel = experienceLevel.Pro
+
+// Shorthand by using leading '.' since player1level is already defined.
+switch player1Level {
+    .Noob: "Welcome!"
+    .Average: "Keep at it!"
+    .Pro: "You monster!"
+}
 ```
 
 ## Fetch Single Json Object and store in Dictionary
