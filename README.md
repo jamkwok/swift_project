@@ -51,6 +51,17 @@ switch player1Level {
 }
 ```
 
+## Enums Raw Values
+```
+enum experienceLevel String{
+    case Noob = "Welcome!"
+    case Average = "Keep at it!"
+    case Pro = "You weapon!"
+}
+
+player1Level: experienceLevel = experienceLevel.Pro
+```
+
 ## Fetch Single Json Object and store in Dictionary
 
 ```
