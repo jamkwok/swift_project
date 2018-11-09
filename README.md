@@ -208,14 +208,32 @@ class Person {
         self.country = country
     }
 
-    func celebrateBirthday() {
+    func getBirthdayGreetingAndIncrementAge() -> String {
         self.age += 1
-        print("Happy birthday \(self.name)")
+        return "Happy birthday \(self.name)"
     }
 
 }
 
-var person1: Person = Person(name: "James", age: 32, country: "Australia")
-person1.celebrateBirthday()
+// Inheritence
+class Worker: Person {
+    let occupation: String
 
+    init(name: String, age: Int, country: String, occupation: String) {
+        self.occupation = occupation
+
+        // Initialise the super class which is Person for this example
+        super.init(name: name, age: age, country: country)
+    }
+
+    func getOccupation() -> String {
+        return self.occupation
+    }
+}
+
+var person1: Person = Person(name: "Kate", age: 22, country: "Belarus")
+print(person1.getBirthdayGreetingAndIncrementAge())
+
+var worker1: Worker = Worker(name: "James", age: 30, country: "Australia", occupation: "Engineer")
+print(worker1.getOccupation())
 ```
