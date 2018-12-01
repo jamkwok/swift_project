@@ -9,7 +9,7 @@ http://www.aidanf.net/learn-swift/types_and_type_inference
 
 ## Loops
 ```
-for number in 1..10 where number % 3 == 0{
+for number in 1...10 where number % 3 == 0{
     print(number)
 }
 ```
