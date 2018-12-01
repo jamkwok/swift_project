@@ -18,6 +18,11 @@ for number in 1...10 where number % 3 == 0{
 for number in (1...10).reversed() where number % 3 == 0{
     print(number)
 }
+
+// when variable not used
+for _ in 1...10 {
+    print("hello")
+}
 ```
 
 ## Optionals
