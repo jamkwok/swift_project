@@ -7,6 +7,13 @@ A simple playground
 http://www.aidanf.net/learn-swift/types_and_type_inference
 ```
 
+## Loops
+```
+for number in 1..10 where number % 3 == 0{
+    print(number)
+}
+```
+
 ## Optionals
 ```
 // Optionals must be unwrapped before use and can be thought of as an enum.
