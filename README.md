@@ -14,7 +14,6 @@ for number in 1...10 where number % 3 == 0{
 }
 
 // reverses count to count down
-
 for number in (1...10).reversed() where number % 3 == 0{
     print(number)
 }
