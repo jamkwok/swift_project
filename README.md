@@ -12,6 +12,12 @@ http://www.aidanf.net/learn-swift/types_and_type_inference
 for number in 1...10 where number % 3 == 0{
     print(number)
 }
+
+// reversed
+
+for number in (1...10).reversed() where number % 3 == 0{
+    print(number)
+}
 ```
 
 ## Optionals
