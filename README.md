@@ -26,6 +26,7 @@ for _ in 1...10 {
 
 ## Try Catch
 ```
+// Audio player can throw when playing corrupted or non existent sound file.
 let url = Bundle.main.url(forResource: "melody", withExtension: "wav")!
 do {
     player = try AVAudioPlayer(contentsOf: url)
