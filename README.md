@@ -24,6 +24,20 @@ for _ in 1...10 {
 }
 ```
 
+## Try Catch
+```
+let url = Bundle.main.url(forResource: "melody", withExtension: "wav")!
+do {
+    player = try AVAudioPlayer(contentsOf: url)
+    guard let player = player else { return }
+    player.prepareToPlay()
+    player.play()
+    
+} catch let error as Error {
+    print(error)
+}
+```
+
 ## Optionals
 ```
 // Optionals must be unwrapped before use and can be thought of as an enum.
